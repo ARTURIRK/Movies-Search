@@ -1,3 +1,6 @@
+:root {
+  --animate-delay: 0.7s;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+nav{
+  padding: 0px 2rem;
+}
+.content{
+  min-height: calc(100vh - 70px - 64px);
+  position: relative;
+}
+.page-footer{
+  padding: 10px!important;
+}
+.movies{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+.preloader-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+
+}
+.input-field{
+  margin-top: 0;
+  padding-top: 10px;
+}
+.spinner-blue-only{
+  border-color:#00838f!important ;
+}
+.d-flex{
+  display: flex!important;
+}
+.validate{
+  width: 30%!important;
+}
+.waves-effect{
+  align-self: center;
+  margin-left: 20px;
+}
+.radio-box{
+  width: 41%;
+  display: flex;
+  justify-content: space-between;
+}
+.radio-box p{
+  margin: 0 0 20px 0;
+}
+h1, h2{
+  color:#08768c;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+}
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 1s;
+}
+h2{
+  margin-bottom: 0;
+}
+h2 span{
+  color:#ec9718;
+}
+.animh2{
+  animation-delay: var(--animate-delay);
 }
