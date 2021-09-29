@@ -3,7 +3,7 @@ function Header(){
     <div className="nav-wrapper">
       <span className="brand-logo">React Movies</span>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="sass.html">Repo</a></li>
+        <li><a href="https://github.com/ARTURIRK/ReactMovies">Repo</a></li>
       </ul>
     </div>
   </nav>
