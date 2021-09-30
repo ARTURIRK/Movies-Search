@@ -15,7 +15,31 @@ code {
     monospace;
 }
 nav{
-  padding: 0px 2rem;
+  padding: 0px 5%;
+  box-sizing: content-box;
+  height: 64px;
+line-height: 64px;
+}
+nav .brand-logo{
+  -webkit-transform: none;
+-webkit-transform: none;
+ transform: none;
+ position: static;
+}
+nav .nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 601px){
+  nav{
+    padding:0 7.5%;
+  }
+}
+@media only screen and (min-width: 993px){
+  nav{
+    padding:0 15%;
+  }
 }
 .content{
   min-height: calc(100vh - 70px - 64px);
@@ -36,9 +60,12 @@ nav{
   margin: -32px 0 0 -32px;
 
 }
+.btn{
+  padding: 0 25px;
+}
 .input-field{
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 .spinner-blue-only{
   border-color:#00838f!important ;
@@ -47,7 +74,7 @@ nav{
   display: flex!important;
 }
 .validate{
-  width: 30%!important;
+  width: 40%!important;
 }
 .waves-effect{
   align-self: center;
@@ -62,6 +89,7 @@ nav{
   margin: 0 0 20px 0;
 }
 h1, h2{
+  font-size: 3.5vw;
   color:#08768c;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5em;
@@ -69,12 +97,35 @@ h1, h2{
 .animate__animated.animate__fadeInDown {
   --animate-duration: 1s;
 }
+h1{
+  margin-bottom: 12px;
+}
 h2{
-  margin-bottom: 0;
+  margin: 0;
 }
 h2 span{
   color:#ec9718;
 }
 .animh2{
   animation-delay: var(--animate-delay);
+}
+@media  screen and (max-width:993px) {
+  body{
+    font-size: 1.5em;
+  }
+  h1,h2{
+    font-size: 5.5vw;
+  }
+  h1{
+    margin-top: 20px;
+  }
+  .radio-box p{
+    margin-right: 10px;
+  }
+}
+footer{
+  font-size: 1rem;
+}
+input[type='search']{
+  -webkit-appearance:none ;
 }
